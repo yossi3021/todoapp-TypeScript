@@ -1,0 +1,39 @@
+$box-shadow-color: rgba(0, 0, 0, .3);
+$bg-color: #fdfdfd;
+
+.todo{
+    background-color: $bg-color;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $box-shadow-color;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &__contents {
+        color: #333;
+        &__title{
+        }
+        &__text{
+        }
+    }
+    &__actions {
+        &__button {
+            display: block;
+            margin: 10px 0;
+            border: 0;
+            box-shadow: 0 0 5px $box-shadow-color;
+            padding: 10px;
+            border-radius: 5px;
+            &:hover {
+                cursor: pointer;
+              }
+            &_delete {
+                color: $bg-color;
+                background-color: red;
+            }
+        }
+    }
+}

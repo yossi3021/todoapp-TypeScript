@@ -1,0 +1,40 @@
+.modal{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__inner{
+        width: 50%;
+        height: 50%;
+        background-color: #fff;
+        border-radius: 30px;
+        &__header {
+            &__close {
+                display: block;
+                margin: 25px 25px 0 auto;
+                font-size: 20px;
+                font-weight: bold;
+                border: 0;
+                background-color: rgba(0, 0, 0, 0);
+                border-radius: 50%;
+                transition: .3s;
+                padding: 10px;
+                &:hover {
+                    background-color: rgba(0, 0, 0, .1);
+                    cursor: pointer;
+                }
+            }
+        }
+        &__contents {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: calc(100% - 100px);
+            padding: 0 20px;
+        }
+    }
+}
